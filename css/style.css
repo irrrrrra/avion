@@ -465,44 +465,66 @@ footer footer ul svg{
     color: var(--color-white);
 }
 
-footer header form  input:nth-child(1){
-    border-radius: 0;
+footer header form  input:nth-child(1) {
     border: none;
+    border-radius: 0;
     padding-left: 3vw;
-    background-color: var(--color-nav-links);
+    background-color: var(--color-nav-linke);
 }
 
-footer header form  input{
-    font-family: "Satoshi";
-    font-weight: normal;
+footer header form  input {
+    font-family: 'Satoshi';
+    font-weight: 400;
     font-size: 16px;
 }
 
-footer header form  input::placeholder{
+footer header form  input::placeholder {
     color: var(--color-white);
 }
 
-footer header form[type="submit"]{
+footer header form[type="submit"] {
     color: var(--color-white);
     background-color: var(--color-dark-primary);
     padding: 0 32px;
 }
 
-footer header form div{
+footer header form div {
     display: grid;
     grid-template-rows: 56px;
     grid-template-columns: 3fr 1fr;
-    
 }
 
-footer form h4{
-    font-family: "ClashDisplay";
-    font-weight: normal;
+footer footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+footer footer span {
+    justify-self: start;
+    font-family: 'Satoshi';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+footer footer div {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 24px;
+    justify-self: end;
+    align-items: center;
+    column-gap: 24px;
+}
+
+header div.burger svg:last-child{
+    display: none;
+}
+
+footer form h4 {
+    font-family: 'Clash Display';
+    font-weight: 400;
     font-size: 16px;
-}
-
-footer header form div{
-    margin-top: 16px;
+    padding-bottom: 16px;
 }
 
 @media screen and (max-width: 390px){
